@@ -12,6 +12,7 @@
 		F5BF7A31204A512F00823068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5BF7A30204A512F00823068 /* Assets.xcassets */; };
 		F5BF7A34204A512F00823068 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BF7A32204A512F00823068 /* LaunchScreen.storyboard */; };
 		F5BF7A3C204A51BE00823068 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BF7A3B204A51BE00823068 /* CardsViewController.swift */; };
+		F5BF7A3E204A586500823068 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BF7A3D204A586500823068 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F5BF7A33204A512F00823068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5BF7A35204A512F00823068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5BF7A3B204A51BE00823068 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		F5BF7A3D204A586500823068 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				F5BF7A32204A512F00823068 /* LaunchScreen.storyboard */,
 				F5BF7A35204A512F00823068 /* Info.plist */,
 				F5BF7A3B204A51BE00823068 /* CardsViewController.swift */,
+				F5BF7A3D204A586500823068 /* DetailViewController.swift */,
 			);
 			path = Tinder;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5BF7A3E204A586500823068 /* DetailViewController.swift in Sources */,
 				F5BF7A2A204A512F00823068 /* AppDelegate.swift in Sources */,
 				F5BF7A3C204A51BE00823068 /* CardsViewController.swift in Sources */,
 			);

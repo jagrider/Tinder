@@ -19,17 +19,60 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XiB-AB-XSK">
-                                <rect key="frame" x="0.0" y="71" width="375" height="374"/>
+                                <rect key="frame" x="0.0" y="71" width="375" height="375"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="6PU-Ku-it8" appends="YES" id="GzA-X5-nwx"/>
+                                    <outletCollection property="gestureRecognizers" destination="EJp-nW-neb" appends="YES" id="qhS-0N-LuF"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="profileImageView" destination="XiB-AB-XSK" id="3nc-JY-bPY"/>
+                        <segue destination="scB-db-lFy" kind="presentation" identifier="detailSegue" id="QMe-1i-eDa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="6PU-Ku-it8">
+                    <connections>
+                        <action selector="didPan:" destination="BYZ-38-t0r" id="nSR-bH-w8J"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer id="EJp-nW-neb">
+                    <connections>
+                        <action selector="didTapImage:" destination="BYZ-38-t0r" id="aO6-mr-bti"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="31.934032983508249"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="3Vd-Mq-pUl">
+            <objects>
+                <viewController id="scB-db-lFy" customClass="DetailViewController" customModule="Tinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T9h-eq-lNB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="psF-Hm-Z85">
+                                <rect key="frame" x="0.0" y="73" width="375" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="leO-4u-SCD"/>
+                    </view>
+                    <connections>
+                        <outlet property="profileImageView" destination="psF-Hm-Z85" id="f9o-dn-HKw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FhL-7W-Lo9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1322.4000000000001" y="31.934032983508249"/>
         </scene>
     </scenes>
 </document>
