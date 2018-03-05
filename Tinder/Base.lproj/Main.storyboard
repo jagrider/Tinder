@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,20 +15,40 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CardsViewController" customModule="Tinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XiB-AB-XSK">
-                                <rect key="frame" x="0.0" y="71" width="375" height="375"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ryan" translatesAutoresizingMaskIntoConstraints="NO" id="XiB-AB-XSK">
+                                <rect key="frame" x="0.0" y="129" width="375" height="375"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="375" id="CgM-ij-OJx"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="6PU-Ku-it8" appends="YES" id="GzA-X5-nwx"/>
                                     <outletCollection property="gestureRecognizers" destination="EJp-nW-neb" appends="YES" id="qhS-0N-LuF"/>
                                 </connections>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_bar" translatesAutoresizingMaskIntoConstraints="NO" id="rhf-FX-AIT">
+                                <rect key="frame" x="0.0" y="44" width="375" height="65"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="action_buttons" translatesAutoresizingMaskIntoConstraints="NO" id="G3q-qg-kV9">
+                                <rect key="frame" x="0.0" y="541" width="375" height="108"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rhf-FX-AIT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4f1-O8-UDe"/>
+                            <constraint firstItem="XiB-AB-XSK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="63M-gj-8UI"/>
+                            <constraint firstItem="rhf-FX-AIT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6Cs-AE-Xgb"/>
+                            <constraint firstItem="G3q-qg-kV9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ae9-gz-WnK"/>
+                            <constraint firstItem="G3q-qg-kV9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NFI-Hx-DgQ"/>
+                            <constraint firstItem="XiB-AB-XSK" firstAttribute="top" secondItem="rhf-FX-AIT" secondAttribute="bottom" constant="20" id="XFg-sO-0eq"/>
+                            <constraint firstItem="XiB-AB-XSK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="afb-Id-zex"/>
+                            <constraint firstItem="G3q-qg-kV9" firstAttribute="top" secondItem="XiB-AB-XSK" secondAttribute="bottom" constant="37" id="fMN-M0-uTY"/>
+                            <constraint firstItem="rhf-FX-AIT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="foh-4b-pSo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="G3q-qg-kV9" secondAttribute="bottom" constant="38" id="lqx-lf-i9c"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -55,15 +75,32 @@
             <objects>
                 <viewController id="scB-db-lFy" customClass="DetailViewController" customModule="Tinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T9h-eq-lNB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="psF-Hm-Z85">
-                                <rect key="frame" x="0.0" y="73" width="375" height="375"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ryan" translatesAutoresizingMaskIntoConstraints="NO" id="psF-Hm-Z85">
+                                <rect key="frame" x="0.0" y="125" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="375" id="yk8-Br-oMm"/>
+                                </constraints>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_bar2" translatesAutoresizingMaskIntoConstraints="NO" id="3uY-G5-t0A">
+                                <rect key="frame" x="0.0" y="44" width="375" height="65"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="8DZ-tm-tYP" appends="YES" id="LBc-AA-QPt"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3uY-G5-t0A" firstAttribute="trailing" secondItem="leO-4u-SCD" secondAttribute="trailing" id="6xy-9X-r9l"/>
+                            <constraint firstItem="3uY-G5-t0A" firstAttribute="top" secondItem="leO-4u-SCD" secondAttribute="top" id="Pmk-60-CEb"/>
+                            <constraint firstItem="3uY-G5-t0A" firstAttribute="leading" secondItem="leO-4u-SCD" secondAttribute="leading" id="Rbh-ov-UGa"/>
+                            <constraint firstItem="psF-Hm-Z85" firstAttribute="leading" secondItem="leO-4u-SCD" secondAttribute="leading" id="fb9-4p-dDU"/>
+                            <constraint firstItem="psF-Hm-Z85" firstAttribute="trailing" secondItem="leO-4u-SCD" secondAttribute="trailing" id="oB8-Rd-s5E"/>
+                            <constraint firstItem="psF-Hm-Z85" firstAttribute="top" secondItem="3uY-G5-t0A" secondAttribute="bottom" constant="16" id="sBq-P0-fI5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="leO-4u-SCD"/>
                     </view>
                     <connections>
@@ -71,8 +108,19 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FhL-7W-Lo9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="8DZ-tm-tYP">
+                    <connections>
+                        <action selector="didTapDone:" destination="scB-db-lFy" id="IJM-dr-F7f"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1322.4000000000001" y="31.934032983508249"/>
+            <point key="canvasLocation" x="895" y="32"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="action_buttons" width="320" height="108"/>
+        <image name="nav_bar" width="320" height="65"/>
+        <image name="nav_bar2" width="320" height="65"/>
+        <image name="ryan" width="449" height="514"/>
+    </resources>
 </document>

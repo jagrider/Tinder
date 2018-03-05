@@ -28,6 +28,8 @@ class CardsViewController: UIViewController {
   
   @IBAction func didPan(_ sender: UIPanGestureRecognizer) {
     
+    print("Image interaction!")
+    
     let location = sender.location(in: view)
     let translation = sender.translation(in: view)
     
@@ -71,6 +73,7 @@ class CardsViewController: UIViewController {
   }
   
   @IBAction func didTapImage(_ sender: UITapGestureRecognizer) {
+    print("Image interaction!")
     self.performSegue(withIdentifier: "detailSegue", sender: nil)
   }
   
